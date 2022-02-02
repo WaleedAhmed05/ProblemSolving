@@ -71,7 +71,7 @@ public class Lab3B {
 		{  
 		int tmp = 0; 
 		String tmp2="";
-		if (rounded_values[i] > rounded_values[j])   
+		if (rounded_values[i] < rounded_values[j])   
 		{
 			
 		tmp = rounded_values[i];  
@@ -86,8 +86,18 @@ public class Lab3B {
 		}  
 		
 		}
-				
-		System.out.println(player_names[inp_1[1]]+" "+rounded_values[inp_1[1]]);
+		
+		
+		
+		if(inp_1[0]==0) {
+			System.out.println(player_names[inp_1[0]]+" "+rounded_values[inp_1[0]]);
+		}
+		else {
+			System.out.println(player_names[inp_1[1]-1]+" "+rounded_values[inp_1[1]-1]);
+		}
+		
+		
+	
 		sc.close();
 		
 	
